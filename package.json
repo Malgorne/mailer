@@ -6,13 +6,13 @@
   "main": "dist/index.js",
   "contributors": [
     {
-      "name": "Parker Lewis",
-      "email": "myEmail@email.com"
+      "name": "Fritz benjamin",
+      "email": "fritz.benj@gmail.com"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "http://git.myproject.com"
+    "url": "https://github.com/Malgorne/mailer"
   },
   "scripts": {
     "build": "gulp",
