@@ -1,0 +1,84 @@
+{
+  "name": "mailer",
+  "version": "0.1.0",
+  "description": "A mailer",
+  "license": "UNLICENCED",
+  "main": "dist/index.js",
+  "contributors": [
+    {
+      "name": "Parker Lewis",
+      "email": "myEmail@email.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://git.myproject.com"
+  },
+  "scripts": {
+    "build": "gulp",
+    "cleanup": "gulp clean",
+    "doc": "gulp doc",
+    "prepush": "gulp tests",
+    "start": "nodemon",
+    "test": "gulp tests"
+  },
+  "engines": {
+    "node": ">=4.6.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "~1.15.2",
+    "chai": "^4.1.0",
+    "chai-http": "^3.0.0",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.3",
+    "del": "^2.2.2",
+    "ent": "^2.2.0",
+    "express": "~4.14.0",
+    "express-request-language": "^1.1.10",
+    "express-validation": "^1.0.2",
+    "express-winston": "^2.4.0",
+    "front-matter": "^2.3.0",
+    "fs-extra": "^4.0.2",
+    "helmet": "^3.6.1",
+    "http-status": "^1.0.1",
+    "joi": "^13.0.2",
+    "klaw": "^2.1.0",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.10.4",
+    "mosca": "^2.5.1",
+    "nodemailer": "^4.3.1",
+    "nodemailer-mock-transport": "^1.3.0",
+    "pug": "^2.0.0-rc.4",
+    "through2": "^2.0.3",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-register": "^6.24.0",
+    "eslint-config-airbnb-base": "11.1.2",
+    "eslint-plugin-import": "2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "6.1.2",
+    "gulp-babel-istanbul": "^1.1.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-inject-modules": "^1.0.0",
+    "gulp-jsdoc3": "^1.0.1",
+    "gulp-mocha": "^3.0.1",
+    "gulp-process-env": "^0.0.2",
+    "require-dir": "^0.3.2",
+    "supertest": "^3.0.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2"
+    ],
+    "plugins": [
+      "add-module-exports"
+    ]
+  }
+}

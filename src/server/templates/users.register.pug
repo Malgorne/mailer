@@ -1,0 +1,9 @@
+extends users.layout.pug
+
+block content
+  div
+    p MAIL TO CONFIRM MAIL ADRESS WHEN REGISTERING
+    p Bonjour #{userName},
+    p Ton linkPath est 
+    | a(href="#{content.link.path}") #{content.link.title}
+    p tu parles #{lng}
