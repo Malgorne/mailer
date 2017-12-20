@@ -61,21 +61,21 @@ export default {
     },
     register: {
       attachments: concat(commonAttachments)
-    }
-  },
-  validation: {
-    body: {
-      emailType: Joi.string().required(),
-      mail: Joi.string().email().required(),
-      name: Joi.string().required(),
-      subject: Joi.string().required(),
-      content: Joi.object().keys({
-        link: {
-          path: Joi.string(),
-          title: Joi.string()
-        }
-      }).required(),
-      lng: Joi.string().required()
+    },
+    validation: {
+      body: {
+        emailType: Joi.string().required(),
+        mail: Joi.string().email().required(),
+        name: Joi.string().required(),
+        subject: Joi.string().required(),
+        content: Joi.object().keys({
+          link: {
+            path: Joi.string(),
+            title: Joi.string()
+          }
+        }).required(),
+        lng: Joi.string().required()
+      }
     }
   }
 };

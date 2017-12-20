@@ -7,7 +7,7 @@ import { Router } from 'express';
 import validate from 'express-validation';
 
 import { getUsersMails, postTest } from '../controllers/users.controller';
-import { validation } from '../../config/templates';
+import { users } from '../../config/templates';
 
 const router = new Router();
 
@@ -25,11 +25,10 @@ router.route('/get')
  * The config of each route can be find in @see {@link module:config/templates/users }
  * @function /mailer/users/post
  * @param req.body a basic post route with a sample controller.
- * @return success : { JSON }: HTTP/1.1 200 OK - { "sucess": true }
- *
- *        failure: { Object }: HTTP/1.1 BAD_REQUEST - "${key}" is required
+ * @return  success : { JSON }: HTTP/1.1 200 OK - { "sucess": true }
+ *          failure: { Object }: HTTP/1.1 BAD_REQUEST - '"${key}" is required'
  */
 router.route('/post')
-  .post(validate(validation), postTest);
+  .post(validate(users.validation), postTest);
 
 export default router;
