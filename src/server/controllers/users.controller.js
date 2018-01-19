@@ -30,9 +30,9 @@ export const getUsersMails = (req, res) => res.status(OK).json({ success: true }
  * @param  {Object} res The response.
  * @return {Function} Response.
  */
-export const postTest = (req, res) => {
+export const postTest = (req, res, next) => {
   const { emailType, mail, name, subject, content, lng } = req.body;
-  nodemailer(emailType, mail, name, subject, content, lng)
+  nodemailer(emailType, mail, name, subject, content, lng, next)
     .then(() => res.status(OK).json({ success: true }))
     .catch(err => res.status(INTERNAL_SERVER_ERROR).json(err));
 };

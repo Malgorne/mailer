@@ -90,8 +90,8 @@ function test() {
   // test a wrong URL
   describe('# POST /mailer/users/post - 404', () =>
     it('should return error 404', () => request(app)
-        .post('/mailer/wrong/post')
-        .expect(NOT_FOUND)));
+      .post('/mailer/wrong/post')
+      .expect(NOT_FOUND)));
 
 
   /**
